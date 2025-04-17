@@ -13,3 +13,15 @@ Os 4 pilares da orientação a objetos são:
 **Polimorfismo** - Ele pode ser divido em duas partes Estatica e Dinamico
 - Estatica - Funciona como uma sobrecarga de metodo, dois metodos com o mesmo nome dentro do mesmo contexto porém com a assinatura diferente.
 - Dinamico - Serve para instancaiar um tipo mais especifico para atribuir um tipo mais generico.
+
+**Override-** Serve para sobreescrever um código da classe pai, se eu chamar um metodo da classe pai já com um valor se eu quiser sobreescrever o mesmo preciso usar o override e o metodo para ser sobreescrito precisa ser declarado com o **Virtual**.
+
+**Modificadores de acesso:**
+
+**Private -** Só é visível dentro da classe, qualquer coisa criada sem informar o modificador de acesso tem como padrão ser **Private**
+
+**Protected -** É transmitido por herança. quando um membro for Protected caso alguém precise acessar o mesmo antes precisara realizar uma herança.
+
+**Internal -** Só podera ser acessado dentro do projeto.
+
+**Public -** Qualquer lugar até fora do projeto podera usar os membros declarados como publico (variavel, metdo, calass e afins).
