@@ -42,3 +42,11 @@ Os 4 pilares da orientação a objetos são:
 - **Partial Class -** Quando a classe for marcada com Partial significa que eu divido a minha classe, sendo assim eu posso ter a mesma classe em dois arquivos diferentes.
 - **Interfaces -** Quando é uma Interface significa que vai ser um contrato ela NÃO irá conter as funcionalidades ela apenas monta a estrutura do método, a classe que faz a implementação desses metodos.
 - **Classes Abstratas -** Quando a classe for marcada com Abstract significa que a classe não pode ser instânciada, ela servirá apenas para ser herdada pelas demais classes.
+
+**Comparando Objetos -** Na minha classe eu faço ela herdar o **IEquatable<Classe>** e ao implementar o IEquatable dentro dele eu faço a validação dos objetos dando um return se é True ou False, se for fazer ObjetoA == ObjetoB a validação será feita por referência de memória e sempre irá retornar false.
+
+**Delegates -** Quando o metodo é marcadao com delegate significa que a implementação do metodo sera feita por outro metodo é uma função que aponta para outra função elas precisam ter a mesma esturura de privacidade e assinatura podendo ter outro nome.
+
+**Listas**
+- **IEnumerable -** é a lista mais simples só tem como fazer consulta na lista.
+- **IList -** tem como inserir, remover, adicionar itens na lista.
