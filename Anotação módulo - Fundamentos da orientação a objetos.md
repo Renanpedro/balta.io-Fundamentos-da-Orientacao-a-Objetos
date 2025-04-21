@@ -36,6 +36,8 @@ Os 4 pilares da orientação a objetos são:
 
 **Using e Dispose -** **Dispose** é utilizado para destruir um objeto após ele já ter sido utilizado. **Using** quando eu faço algo dentro do using ele irá criar o objeto e ao final destruir ele. Geralmente usamos o using quando vamos acessar o banco de dados assim ele cria a conexão com o banco de dados e depois destroi esse objeto assim liberando o acesso ao banco para outro usuário.
 
+**Upcast/Downcast -** Upcast seria eu eu ter uma variavel do tipo da classe pai e nessa mesma variavel eu conseguir colocar um objeto da classe filha, isso acontece pq a classe filha herda a classe pai com isso tem as mesmas propriedades e metodos. Downcast seria o contrário a variavel ser do tipo da classe filha e a mesma receber um objeto do tipo da classe pai.
+
 **Classes**
 - **Classe Estática -** Quando a classe for marcada com Static siginifca que ela não pode ser instânciada, assim que a aplicação for iniciada essa classe já será registrada na memória.
 - **Classe Selada -** Quando a classe for marcada com Sealed ela é selada e não poderá ser feito a herança.
@@ -45,7 +47,7 @@ Os 4 pilares da orientação a objetos são:
 
 **Comparando Objetos -** Na minha classe eu faço ela herdar o **IEquatable<Classe>** e ao implementar o IEquatable dentro dele eu faço a validação dos objetos dando um return se é True ou False, se for fazer ObjetoA == ObjetoB a validação será feita por referência de memória e sempre irá retornar false.
 
-**Delegates -** Quando o metodo é marcadao com delegate significa que a implementação do metodo sera feita por outro metodo é uma função que aponta para outra função elas precisam ter a mesma esturura de privacidade e assinatura podendo ter outro nome.
+**Delegates -**  Quando o metodo é marcadao com delegate significa que a implementação do metodo sera feita por outro metodo é uma função que aponta para outra função elas precisam ter a mesma estrurura de privacidade e assinatura podendo ter outro nome.
 
 **Listas**
 - **IEnumerable -** é a lista mais simples só tem como fazer consulta na lista.
