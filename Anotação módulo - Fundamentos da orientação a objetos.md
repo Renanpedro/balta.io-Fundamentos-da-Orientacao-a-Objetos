@@ -49,6 +49,19 @@ Os 4 pilares da orientação a objetos são:
 
 **Delegates -**  Quando o metodo é marcadao com delegate significa que a implementação do metodo sera feita por outro metodo é uma função que aponta para outra função elas precisam ter a mesma estrurura de privacidade e assinatura podendo ter outro nome.
 
+**Generics(<>) -** Permitem que você escreva classes, métodos, interfaces e structs que funcionam com tipos genéricos, ou seja, você só define o tipo na hora de usar.
+
 **Listas**
 - **IEnumerable -** é a lista mais simples só tem como fazer consulta na lista.
 - **IList -** tem como inserir, remover, adicionar itens na lista.
+
+**Tipo de Lista / Coleção	Situação Ideal de Uso**
+- **List<T> -** Quando precisa adicionar/remover dados livremente e acessar por índice
+- **Array     -** Quando tem um número fixo de elementos e quer mais performance
+- **HashSet<T> -** Quando não pode haver itens duplicados e precisa de performance em buscas
+- **Dictionary<TKey, TValue> -** Quando precisa armazenar pares chave/valor e acessar rapidamente por chave
+- **Queue<T> -** Quando precisa de uma fila (FIFO: primeiro a entrar, primeiro a sair)
+- **Stack<T> -** Quando precisa de uma pilha (LIFO: último a entrar, primeiro a sair)
+- **ObservableCollection<T> -** Quando precisa que a lista notifique mudanças (ex: interface WPF/Blazor)
+- **IEnumerable<T> -** Quando quer apenas iterar sobre os dados em memória
+- **IQueryable<T> -** Quando quer montar uma consulta dinâmica (ex: com Entity Framework)
